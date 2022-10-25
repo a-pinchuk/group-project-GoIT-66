@@ -1,0 +1,17 @@
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap';
+
+@import "./base/normalize";
+@import "./base/fonts";
+@import "./base/globalStyles";
+@import "./base/colors";
+@import "./base/reset";
+
+
+
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/placeholders";
+
+@import "./components/container";
+
+@import "./components/burger";

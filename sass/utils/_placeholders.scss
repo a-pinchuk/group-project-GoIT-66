@@ -1,0 +1,16 @@
+// @extend %section
+%section {
+    @include media-min(mobile){
+        margin-bottom: 60px;
+    }
+
+    @include media-min(desktop){
+        margin-bottom: 94px;
+        padding: 0;
+    }
+}
+
+%is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}

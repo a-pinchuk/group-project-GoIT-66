@@ -1,0 +1,14 @@
+body {
+    font-family: $roboto;
+    color: getColor('primary-text-color');
+    background-color: getColor('white');
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

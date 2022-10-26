@@ -1,7 +1,5 @@
 .header .container {
-
-    background: #FEFEFE;
-/* Meny shadow */
+    background: getColor('background');
 
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
@@ -20,7 +18,6 @@
     display: none;
     @include media-max(tablet){
         display: inline-flex;
-        // 
         padding: 0;
         margin: 0;
         border: none;
@@ -56,32 +53,27 @@
         &.is-open{
             display: block;
         }
-        /* White */
-        background: #FEFEFE;
-        /* Meny shadow */
-        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-        border-radius: 30px 0px 30px 30px;
+        
     }
 
 }
 
 .mobile-menu__list{
     @include media-max(tablet){
-        padding-top: 16px;
-        padding-left: 16px;
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+        border-radius: 30px 0px 30px 30px;
+        overflow: hidden;
     }
-    
-
     @include media-min(tablet){
-        display: flex;
-        justify-items: center;
-        align-items: center;
+        @include centeredFlex();
     }
+    /* White */
+    background: getColor('background');
+    /* Meny shadow */
+    
 }
 
 .mobile-menu__item:not(:last-child){
-    margin-bottom: 32px;
-
     @include media-min(tablet){
         margin-bottom: 0;
         margin-right: 28px;
@@ -89,46 +81,52 @@
 }
 
 .mobile-menu__link {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     /* identical to box height */
-    color: #000000;
+    color: getColor('black');
+
+    @include media-min(tablet){
+        &:hover,
+        &:focus {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration-line: underline;
+    
+            color: getColor(accent);
+        }
+    } 
 }
 
 .mobile-menu__item {
-    
-    &:active{
-        background: #BBF330;
+    @include media-max(tablet){
+        padding-top: 16px;
+        padding-left: 16px;
+        height: 51px;
+        &:active{
+            background: getColor('accent');
+        }
     }
+    
 }
 
 .menu__order{
     display: none;
+    cursor: pointer;
     @include media-min(tablet){
         width: 92px;
         height: 32px;
         margin-left: 2px;
         display: block;
-        background: #BBF330;
+        background: getColor('accent');
         border: none;
         border-radius: 30px;
 
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 13px;
         line-height: 1.53;
-        /* identical to box height, or 20px */
-
-        /* Black */
-
-        color: #2C2C2C;
+        color: getColor('secondary-text-color');
     }
-    
 }
-
-
-

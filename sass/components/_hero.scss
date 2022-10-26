@@ -1,0 +1,36 @@
+.main__title {
+    max-width: 502px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+
+
+    /* Black */
+
+    color: #2C2C2C;
+
+}
+
+.main__text{
+    max-width: 502px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    /* Black */
+
+    color: #2C2C2C;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+

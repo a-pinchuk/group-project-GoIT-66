@@ -8,10 +8,14 @@
         width: 336px;
         height: 320px;
         display: block;
+        padding-left: 8px;
+        padding-right: 8px;
     }
     @include media-min(desktop){
         width: 608px;
         height: 580px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 
@@ -21,12 +25,8 @@
     border: 14px solid #FFE550;
     border-radius: 456.5px;
     overflow: hidden;
-    margin-left: 8px;
-    margin-right: 8px;
     @include media-min(desktop){
         border: 26px solid #FFE550;
-        margin-left: 14px;
-        margin-right: 14px;
     }
 }
 
@@ -56,6 +56,7 @@
     height: 28px;
     position: absolute;
     top:50%;
+    transform: translateY(-50%);
     left:0;
     cursor: pointer;
     background: #FFFFFF;
@@ -75,6 +76,7 @@
     height: 28px;
     position: absolute;
     top:50%;
+    transform: translateY(-50%);
     right: 0;
     cursor: pointer;
 

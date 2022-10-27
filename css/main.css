@@ -318,8 +318,6 @@ button {
 }
 
 .regtangle {
-  width: 320px;
-  height: 320px;
   background: #FEFEFE;
   /* Yellow main */
   border: 14px solid #FFE550;
@@ -331,9 +329,8 @@ button {
 @media screen and (min-width: 1280px) {
   .regtangle {
     border: 26px solid #FFE550;
-    margin: 14px;
-    width: 580px;
-    height: 580px;
+    margin-left: 14px;
+    margin-right: 14px;
   }
 }
 

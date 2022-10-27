@@ -1,6 +1,8 @@
 .viewport{
+    border: 2px solid tomato;
     display: none;
     position: relative;
+    
     
     @include media-min(tablet){
         width: 336px;
@@ -14,31 +16,32 @@
 }
 
 .regtangle {
-    width: 580px;
-    height: 580px;
+    width: 320px;
+    height: 320px;
     background: #FEFEFE;
 /* Yellow main */
     border: 14px solid #FFE550;
     border-radius: 456.5px;
     overflow: hidden;
+    margin-left: 8px;
+    margin-right: 8px;
     @include media-min(desktop){
         border: 26px solid #FFE550;
+        margin: 14px;
+        width: 580px;
+        height: 580px;
     }
 }
 
 .slider {
-    /* width: 100%; */
-    
-    
-
     @include media-min(tablet){
-        width: 320px;
-        height: 320px;
+        width: 292px;
+        height: 292px;
         display: block;
     }
     @include media-min(desktop){
-        width: 580px;
-        height: 580px;
+        width: 528px;
+        height: 528px;
     }
 
 }
@@ -52,6 +55,8 @@
 }
 
 .slider-prev{
+    width: 34px;
+    height: 28px;
     position: absolute;
     top:50%;
     left:0;
@@ -69,6 +74,8 @@
 }
 
 .slider-next{
+    width: 34px;
+    height: 28px;
     position: absolute;
     top:50%;
     right: 0;
@@ -83,12 +90,5 @@
         width: 48px;
         height: 40px;
         border-radius: 8px;
-    }
-}
-
-.slider__card{
-    @include media-min(desktop){
-        width: 528px;
-        height: 528px;
     }
 }

@@ -299,6 +299,7 @@ button {
 }
 
 .viewport {
+  border: 2px solid tomato;
   display: none;
   position: relative;
 }
@@ -317,34 +318,36 @@ button {
 }
 
 .regtangle {
-  width: 580px;
-  height: 580px;
+  width: 320px;
+  height: 320px;
   background: #FEFEFE;
   /* Yellow main */
   border: 14px solid #FFE550;
   border-radius: 456.5px;
   overflow: hidden;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 @media screen and (min-width: 1280px) {
   .regtangle {
     border: 26px solid #FFE550;
+    margin: 14px;
+    width: 580px;
+    height: 580px;
   }
 }
 
-.slider {
-  /* width: 100%; */
-}
 @media screen and (min-width: 768px) {
   .slider {
-    width: 320px;
-    height: 320px;
+    width: 292px;
+    height: 292px;
     display: block;
   }
 }
 @media screen and (min-width: 1280px) {
   .slider {
-    width: 580px;
-    height: 580px;
+    width: 528px;
+    height: 528px;
   }
 }
 
@@ -360,6 +363,8 @@ button {
 }
 
 .slider-prev {
+  width: 34px;
+  height: 28px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -380,6 +385,8 @@ button {
 }
 
 .slider-next {
+  width: 34px;
+  height: 28px;
   position: absolute;
   top: 50%;
   right: 0;
@@ -396,13 +403,6 @@ button {
     width: 48px;
     height: 40px;
     border-radius: 8px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .slider__card {
-    width: 528px;
-    height: 528px;
   }
 }
 

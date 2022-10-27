@@ -9,8 +9,46 @@
     }
     @include media-min(desktop){
         width: 608px;
-        height: 608px;
+        height: 580px;
     }
+}
+
+.regtangle {
+    width: 580px;
+    height: 580px;
+    background: #FEFEFE;
+/* Yellow main */
+    border: 14px solid #FFE550;
+    border-radius: 456.5px;
+    overflow: hidden;
+    @include media-min(desktop){
+        border: 26px solid #FFE550;
+    }
+}
+
+.slider {
+    /* width: 100%; */
+    
+    
+
+    @include media-min(tablet){
+        width: 320px;
+        height: 320px;
+        display: block;
+    }
+    @include media-min(desktop){
+        width: 580px;
+        height: 580px;
+    }
+
+}
+
+.slider-line {
+    width: 1024px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .slider-prev{

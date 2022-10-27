@@ -312,8 +312,51 @@ button {
 @media screen and (min-width: 1280px) {
   .viewport {
     width: 608px;
-    height: 608px;
+    height: 580px;
   }
+}
+
+.regtangle {
+  width: 580px;
+  height: 580px;
+  background: #FEFEFE;
+  /* Yellow main */
+  border: 14px solid #FFE550;
+  border-radius: 456.5px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1280px) {
+  .regtangle {
+    border: 26px solid #FFE550;
+  }
+}
+
+.slider {
+  /* width: 100%; */
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    width: 320px;
+    height: 320px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider {
+    width: 580px;
+    height: 580px;
+  }
+}
+
+.slider-line {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 .slider-prev {
@@ -590,39 +633,4 @@ button {
   font-size: 13px;
   line-height: 1.53;
   color: #2C2C2C;
-}
-
-.slider {
-  /* width: 100%; */
-  width: 100%;
-  background: #FEFEFE;
-  /* Yellow main */
-  border: 14px solid #FFE550;
-  border-radius: 456.5px;
-  overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .slider {
-    width: 320px;
-    height: 320px;
-    display: block;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slider {
-    width: 580px;
-    height: 580px;
-    border: 26px solid #FFE550;
-  }
-}
-
-.slider-line {
-  width: 1024px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  left: 0;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
 }/*# sourceMappingURL=main.css.map */

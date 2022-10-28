@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>a.pinchuk WebStudio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -59,44 +59,81 @@
 
     </header>
 
-    <main class="hero">
-      <div class="container">
-        <div class="hero-leftside">
-          <h1 class="main__title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-          <button class="hero__order" type="button">Order Now</button>
-        </div>
-        
-        <div class="viewport">
-          <svg class="slider-prev" width="34" height="28">
-            <use href="./images/symbol-defs.svg#icon-left"></use>
-          </svg>
-          <svg class="slider-next" width="34" height="28">
-            <use href="./images/symbol-defs.svg#icon-right"></use>
-          </svg>
-          <div class="regtangle">
-            <div class="slider">
-              <div class="slider-line">
-                <picture>
-                  <source srcset="./images/slide-l.jpg 1x, ./images/slide-l-2x.jpg 2x, ./images/slide-l-3x.jpg 3x" media="(min-width: 1200px)">
-                  <source srcset="./images/slide-m.jpg 1x, ./images/slide-m-2x.jpg 2x, ./images/slide-m-3x.jpg 3x" media="(min-width: 768px)">
-                  <img class="slider__card" src="./images/slide-l" alt="член команди" width="292" height="292"/>
-                </picture>
-                <picture>
-                  <source srcset="./images/slide2-l.jpg 1x, ./images/slide2-l-2x.jpg 2x, ./images/slide2-l-3x.jpg 3x" media="(min-width: 1200px)">  
-                  <source srcset="./images/slide2-m.jpg 1x, ./images/slide2-m-2x.jpg 2x, ./images/slide2-m-3x.jpg 3x" media="(min-width: 768px)">   
-                  <img class="slider__card" src="./images/slide2-l" alt="член команди" width="292" height="292"/>
-                </picture>
-                <picture>
-                  <source srcset="./images/slide3-l.jpg 1x, ./images/slide3-l-2x.jpg 2x, ./images/slide3-l-3x.jpg 3x" media="(min-width: 1200px)">
-                  <source srcset="./images/slide3-m.jpg 1x, ./images/slide3-m-2x.jpg 2x, ./images/slide3-m-3x.jpg 3x" media="(min-width: 768px)">
-                  <img class="slider__card" src="./images/slide3-l" alt="член команди" width="292" height="292"/>
-                </picture>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-leftside">
+            <h1 class="main__title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <button class="hero__order" type="button">Order Now</button>
+          </div>       
+          <div class="viewport">
+            <svg class="slider-prev" width="34" height="28">
+              <use href="./images/symbol-defs.svg#icon-left"></use>
+            </svg>
+            <svg class="slider-next" width="34" height="28">
+              <use href="./images/symbol-defs.svg#icon-right"></use>
+            </svg>
+            <div class="regtangle">
+              <div class="slider">
+                <div class="slider-line">
+                  <picture>
+                    <source srcset="./images/slide-l.jpg 1x, ./images/slide-l-2x.jpg 2x, ./images/slide-l-3x.jpg 3x" media="(min-width: 1200px)">
+                    <source srcset="./images/slide-m.jpg 1x, ./images/slide-m-2x.jpg 2x, ./images/slide-m-3x.jpg 3x" media="(min-width: 768px)">
+                    <img class="slider__card" src="./images/slide-l" alt="член команди" width="292" height="292"/>
+                  </picture>
+                  <picture>
+                    <source srcset="./images/slide2-l.jpg 1x, ./images/slide2-l-2x.jpg 2x, ./images/slide2-l-3x.jpg 3x" media="(min-width: 1200px)">  
+                    <source srcset="./images/slide2-m.jpg 1x, ./images/slide2-m-2x.jpg 2x, ./images/slide2-m-3x.jpg 3x" media="(min-width: 768px)">   
+                    <img class="slider__card" src="./images/slide2-l" alt="член команди" width="292" height="292"/>
+                  </picture>
+                  <picture>
+                    <source srcset="./images/slide3-l.jpg 1x, ./images/slide3-l-2x.jpg 2x, ./images/slide3-l-3x.jpg 3x" media="(min-width: 1200px)">
+                    <source srcset="./images/slide3-m.jpg 1x, ./images/slide3-m-2x.jpg 2x, ./images/slide3-m-3x.jpg 3x" media="(min-width: 768px)">
+                    <img class="slider__card" src="./images/slide3-l" alt="член команди" width="292" height="292"/>
+                  </picture>
+                </div>
               </div>
             </div>
+            </div>
+        </div>
+      </section>
+      <!-- OFFERTING -->
+      <section class="offering">
+        <div class="container">
+          <div class="apple">
+            <picture>
+              <img class="" src="./images/apple-s.png" alt="член команди" width="280" height="309"/>
+            </picture>
+          </div>
+          <div class="offering__text-side">
+            <h2 class="offering__title">What’s Special About Our Offerings</h2>
+            <p class="offering__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <ul class="offering__list">
+              <li class="offering__item">
+                <svg width="48" height="48" aria-label="лого">
+                  <use class="" href="./images/symbol-defs.svg#icon-deliv"></use>
+                </svg>
+                <p class="offering__p">Fasest Delivery</p>
+                <p class="offering__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+              <li class="offering__item">
+                <svg width="48" height="48" aria-label="лого">
+                  <use class="" href="./images/symbol-defs.svg#icon-order"></use>
+                </svg>
+                <p class="offering__p">Easy To Order</p>
+                <p class="offering__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+            </ul>
+
+              <button class="offering__order">Order Now</button>
+              <button class="offering__read">Read more &#62;</button>
+
+            
           </div>
         </div>
-      </div>
+      </section>
 
     </main>
     <!-- JavaScript -->

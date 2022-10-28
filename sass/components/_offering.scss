@@ -1,0 +1,78 @@
+.offering   {
+    background-image: url(../images/bcg-s.jpg);
+    background-size: cover;
+    background-color: getColor('hero-background');
+    margin-top: 60px;
+    padding-top: 70px;
+}
+
+.offering__title{
+    margin-top: 60px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: getColor('secondary-text-color');
+}
+
+.offering__text{
+    margin-top: 28px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: getColor('secondary-text-color');
+}
+
+.offering__p{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: getColor('secondary-text-color');
+}
+
+.offering__item{
+    margin-top: 28px;
+}
+
+.offering__order{
+    margin-top: 28px;
+    width: 106px;
+    height: 40px;
+    margin-right: 24px;
+    background: #FFFFFF;
+
+    cursor: pointer;
+    background: #FFFFFF;
+/* Dark green */
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    /* identical to box height, or 20px */
+
+
+    /* Black */
+
+    color: #2C2C2C;
+}
+
+.offering__read {
+    background-color: transparent;
+    
+}
+
+.apple{
+    width: 280px;
+    height: 279.98px;
+    margin-left: auto;
+    margin-right: auto;
+}

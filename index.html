@@ -64,8 +64,8 @@
       <section class="hero">
         <div class="container">
           <div class="hero-leftside">
-            <h1 class="main__title">Enjoy Your Favorite Food From Anywhere</h1>
-            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
             <button class="hero__order" type="button">Order Now</button>
           </div>       
           <div class="viewport">
@@ -79,12 +79,12 @@
               <div class="slider">
                 <div class="slider-line">
                   <picture>
-                    <source srcset="./images/slide-l.jpg 1x, ./images/slide-l-2x.jpg 2x, ./images/slide-l-3x.jpg 3x" media="(min-width: 1200px)">
+                    <source srcset="./images/slide-l.png 1x, ./images/slide-l-2x.png 2x, ./images/slide-l-3x.png 3x" media="(min-width: 1200px)">
                     <source srcset="./images/slide-m.jpg 1x, ./images/slide-m-2x.jpg 2x, ./images/slide-m-3x.jpg 3x" media="(min-width: 768px)">
                     <img class="slider__card" src="./images/slide-l" alt="член команди" width="292" height="292"/>
                   </picture>
                   <picture>
-                    <source srcset="./images/slide2-l.jpg 1x, ./images/slide2-l-2x.jpg 2x, ./images/slide2-l-3x.jpg 3x" media="(min-width: 1200px)">  
+                    <source srcset="./images/slide2-l.png 1x, ./images/slide2-l-2x.png 2x, ./images/slide2-l-3x.png 3x" media="(min-width: 1200px)">  
                     <source srcset="./images/slide2-m.jpg 1x, ./images/slide2-m-2x.jpg 2x, ./images/slide2-m-3x.jpg 3x" media="(min-width: 768px)">   
                     <img class="slider__card" src="./images/slide2-l" alt="член команди" width="292" height="292"/>
                   </picture>
@@ -104,7 +104,19 @@
         <div class="container">
           <div class="apple">
             <picture>
-              <img class="" src="./images/apple-s.png" alt="член команди" width="280" height="309"/>
+              <img class="offering__apple--mobile" src="./images/apple-s.png" alt="член команди" width="280" height="309"/>
+            </picture>
+            <picture>
+              <img class="offering__apple--tablet" src="./images/apple-m.png" alt="член команди" width="357" height="394"/>
+            </picture>
+            <picture>
+              <img class="offering__apple--tablet" src="./images/apple-m1.png" alt="член команди" width="166" height="211"/>
+            </picture>
+            <picture>
+              <img class="offering__apple--tablet" src="./images/apple-m2.png" alt="член команди" width="108" height="136"/>
+            </picture>
+            <picture>
+              <img class="offering__apple--desktop" src="./images/apple-l.png" alt="член команди" width="550" height="607"/>
             </picture>
           </div>
           <div class="offering__text-side">
@@ -112,14 +124,14 @@
             <p class="offering__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
             <ul class="offering__list">
               <li class="offering__item">
-                <svg width="48" height="48" aria-label="лого">
-                  <use class="" href="./images/symbol-defs.svg#icon-deliv"></use>
+                <svg class="offering__icon" width="48" height="48" aria-label="лого">
+                  <use href="./images/symbol-defs.svg#icon-deliv"></use>
                 </svg>
                 <p class="offering__p">Fasest Delivery</p>
                 <p class="offering__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
               </li>
               <li class="offering__item">
-                <svg width="48" height="48" aria-label="лого">
+                <svg class="offering__icon" width="48" height="48" aria-label="лого">
                   <use class="" href="./images/symbol-defs.svg#icon-order"></use>
                 </svg>
                 <p class="offering__p">Easy To Order</p>

@@ -1,30 +1,62 @@
 .offering   {
     background-image: url(../images/bcg-s.jpg);
     background-size: cover;
-    background-color: getColor('hero-background');
-    margin-top: 60px;
-    padding-top: 70px;
+    background-color: getColor('background');
+    padding-top: 41px;
+    padding-bottom: 60px;
+
+    @include media-min (tablet){
+        background-image: url(../images/bcg-m.jpg);
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    @include media-min (desktop){
+        background-image: url(../images/bcg-l.jpg);
+        padding-top: 177px;
+        padding-bottom: 43px;
+    }
+}
+
+.offering .container {
+    @include media-min(desktop){
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .offering__title{
-    margin-top: 60px;
-
+    margin-bottom: 28px;
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
 
     color: getColor('secondary-text-color');
+
+    @include media-min (tablet){
+        margin-bottom: 28px;
+        width: 526px;
+        font-size: 42px;
+        line-height: 49px;
+    }
 }
 
 .offering__text{
-    margin-top: 28px;
-
+    margin-bottom: 28px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 
     color: getColor('secondary-text-color');
+
+    @include media-min(tablet){
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
+
+
 
 .offering__p{
     margin-bottom: 16px;
@@ -38,8 +70,16 @@
 }
 
 .offering__item{
-    margin-top: 28px;
+    margin-bottom: 28px;
+    &:first-child{
+        margin-right: 116px;
+    }
 }
+
+.offering__icon{
+    margin-bottom: 8px;
+}
+
 
 .offering__order{
     margin-top: 28px;
@@ -58,21 +98,78 @@
     font-size: 13px;
     line-height: 150%;
     /* identical to box height, or 20px */
+    /* Black */
+    color: #2C2C2C;
+
+    &:active{
+        border: 2px solid #597D00;
+    }
+
+    @include media-min(tablet){
+        margin-top: 40px;
+    }
+}
+
+.offering__read {
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 13.6667px;
+    line-height: 150%;
+    /* or 20px */
 
 
     /* Black */
 
-    color: #2C2C2C;
-}
-
-.offering__read {
-    background-color: transparent;
-    
+    color: #000000;
 }
 
 .apple{
-    width: 280px;
-    height: 279.98px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+
+    @include media-min(tablet){
+        justify-content: space-between;
+    }
+
+    @include media-min(desktop){
+        justify-content: flex-start;
+    }
+}
+
+.offering__apple--mobile{
+    display: none;
+
+    @include media-max (tablet){
+        display: block;
+    }
+}
+
+.offering__apple--tablet{
+    display: none;
+
+    @include media-min(tablet){
+        display: block;
+    }
+
+    @include media-min(desktop){
+        display: none;
+    }
+}
+
+.offering__apple--desktop {
+    @include media-max (desktop){
+        display: none;
+    }
+}
+
+
+.offering__list {
+    @include media-min(tablet){
+        display: flex;
+        
+        
+    }
 }

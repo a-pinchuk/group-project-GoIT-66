@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap'; /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'; /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
 ========
@@ -448,7 +448,12 @@ button {
 }
 
 .header {
-  background-color: #FEFEFE;
+  margin-bottom: 60px;
+}
+
+.header .container {
+  -webkit-box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+          box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
 .header__nav {
@@ -586,11 +591,11 @@ button {
 }
 
 .hero {
-  background-color: #F5F5F5;
+  margin-bottom: 50px;
 }
 
-.main__title {
-  margin-top: 60px;
+.hero__title {
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -598,8 +603,8 @@ button {
   color: #2C2C2C;
 }
 @media screen and (min-width: 768px) {
-  .main__title {
-    margin: 0;
+  .hero__title {
+    margin-bottom: 44px;
     max-width: 537px;
     font-weight: 700;
     font-size: 42px;
@@ -607,22 +612,20 @@ button {
   }
 }
 
-.main__text {
+.hero__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   /* or 21px */
-  margin-top: 28px;
   margin-bottom: 28px;
   color: #2C2C2C;
 }
 @media screen and (min-width: 768px) {
-  .main__text {
+  .hero__text {
     max-width: 502px;
     font-size: 16px;
-    margin-top: 44px;
     margin-bottom: 40px;
   }
 }
@@ -655,25 +658,65 @@ button {
 .offering {
   background-image: url(../images/bcg-s.jpg);
   background-size: cover;
-  background-color: #C4C4C4;
-  margin-top: 60px;
-  padding-top: 70px;
+  background-color: #F5F5F5;
+  padding-top: 41px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .offering {
+    background-image: url(../images/bcg-m.jpg);
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .offering {
+    background-image: url(../images/bcg-l.jpg);
+    padding-top: 177px;
+    padding-bottom: 43px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offering .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .offering__title {
-  margin-top: 60px;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
   color: #2C2C2C;
 }
+@media screen and (min-width: 768px) {
+  .offering__title {
+    margin-bottom: 28px;
+    width: 526px;
+    font-size: 42px;
+    line-height: 49px;
+  }
+}
 
 .offering__text {
-  margin-top: 28px;
+  margin-bottom: 28px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #2C2C2C;
+}
+@media screen and (min-width: 768px) {
+  .offering__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .offering__p {
@@ -686,7 +729,14 @@ button {
 }
 
 .offering__item {
-  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.offering__item:first-child {
+  margin-right: 116px;
+}
+
+.offering__icon {
+  margin-bottom: 8px;
 }
 
 .offering__order {
@@ -707,14 +757,86 @@ button {
   /* Black */
   color: #2C2C2C;
 }
+.offering__order:active {
+  border: 2px solid #597D00;
+}
+@media screen and (min-width: 768px) {
+  .offering__order {
+    margin-top: 40px;
+  }
+}
 
 .offering__read {
+  cursor: pointer;
   background-color: transparent;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
+  /* or 20px */
+  /* Black */
+  color: #000000;
 }
 
 .apple {
-  width: 280px;
-  height: 279.98px;
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .apple {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .apple {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.offering__apple--mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .offering__apple--mobile {
+    display: block;
+  }
+}
+
+.offering__apple--tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .offering__apple--tablet {
+    display: block;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .offering__apple--tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .offering__apple--desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offering__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

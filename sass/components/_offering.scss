@@ -13,8 +13,8 @@
 
     @include media-min (desktop){
         background-image: url(../images/bcg-l.jpg);
-        padding-top: 177px;
-        padding-bottom: 43px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -117,11 +117,11 @@
     font-size: 13.6667px;
     line-height: 150%;
     /* or 20px */
-
-
     /* Black */
-
     color: #000000;
+    @include media-min(desktop){
+        display: none;
+    }
 }
 
 .apple{
@@ -136,12 +136,20 @@
 
     @include media-min(desktop){
         justify-content: flex-start;
+        margin-right: 90px;
+    }
+}
+
+.offering__list {
+    @include media-min(tablet){
+        display: flex;
+        
+        
     }
 }
 
 .offering__apple--mobile{
     display: none;
-
     @include media-max (tablet){
         display: block;
     }
@@ -149,9 +157,8 @@
 
 .offering__apple--tablet{
     display: none;
-
     @include media-min(tablet){
-        display: block;
+        display: flex;
     }
 
     @include media-min(desktop){
@@ -162,14 +169,5 @@
 .offering__apple--desktop {
     @include media-max (desktop){
         display: none;
-    }
-}
-
-
-.offering__list {
-    @include media-min(tablet){
-        display: flex;
-        
-        
     }
 }
